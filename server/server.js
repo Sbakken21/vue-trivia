@@ -161,8 +161,6 @@ io.on('connection', (socket) => {
             questionsAsked = 0;
         } else {
             if(socket.id === userIds[playerIndex]){
-                // clearInterval(interval);
-                // countdown = 10;
                 axios.get('https://opentdb.com/api.php?amount=1&type=multiple').then((res) => {
                     question = res.data.results[0];
                     this.question = question;
