@@ -170,4 +170,9 @@ export default {
 .underline {
     border-bottom: 2px solid white;
 }
+
+.card {
+    background-color: rgba(0,0,0,0.9) !important;
+    border: solid 2px white !important;
+}
 </style>
